@@ -1,0 +1,2 @@
+import streamlit as st
+from azure.cognitiveservices.vision.computervision import ComputerVisionClient
