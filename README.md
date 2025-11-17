@@ -2,6 +2,7 @@
 
 This is a simple Streamlit application that extracts text from uploaded images using Azure Computer Vision (Image Analysis). The app reads an image, sends it to Azure for OCR, and displays the extracted text with color-coded confidence levels.
 
+<img src="img/readme_demo.gif" width="500px" height="333px">
 ---
 
 ## Features
