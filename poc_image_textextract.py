@@ -13,8 +13,12 @@ img_path = "img/licence_plate.jpg"
 with open(img_path, "rb") as f:
     result = client.analyze(
         image_data=f.read(),
-        visual_features=[VisualFeatures.TAGS]
+        visual_features=[VisualFeatures.READ]
     )
 
-for tag in result.tags.list:
-    print(tag.name, tag.confidence)
+# Extract recognized text
+for block in result.read.blocks:
+    print(block,'\n')
+    for line in block.lines:
+        print(line,'\n')
+        print(line.text)
