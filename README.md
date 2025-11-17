@@ -28,7 +28,9 @@ This is a simple Streamlit application that extracts text from uploaded images u
 ## Notes
 
 This project is intentionally simple and designed as a lightweight demonstration.
+
 It requires an active Azure Computer Vision resource.
+
 Confidence color thresholds must be defined in the sup_utils.py file.
 
 ## Running the app
